@@ -36,7 +36,7 @@ public class TicketRegistrationController {
     }
 
     @GetMapping("/generateReferenceNumber")
-    public ResponseEntity<String> generateReferenceNumber(){
+    public Object generateReferenceNumber(){
         return service.generateReferenceNumber();
     }
 

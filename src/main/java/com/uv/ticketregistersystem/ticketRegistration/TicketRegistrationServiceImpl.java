@@ -4,7 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class TicketRegistrationServiceImpl implements TicketRegistrationService{
@@ -42,7 +44,8 @@ public class TicketRegistrationServiceImpl implements TicketRegistrationService{
     }
 
     @Override
-    public ResponseEntity<String> generateReferenceNumber() {
+    public Object generateReferenceNumber() {
+        Map<String, String> map = new HashMap<>();
         String max = repository.findMaxReferenceNumber();
         String referenceNumber="REF-001";
         if(max !=null){
@@ -55,6 +58,7 @@ public class TicketRegistrationServiceImpl implements TicketRegistrationService{
             else
                 referenceNumber="REF-"+num;
         }
-        return ResponseEntity.ok().body(referenceNumber);
+        map.put("referenceNumber",referenceNumber);
+        return map;
     }
 }

@@ -15,5 +15,5 @@ public interface TicketRegistrationService {
 
     boolean checkForPayment(String referenceNumber);
 
-    ResponseEntity<String> generateReferenceNumber();
+    Object generateReferenceNumber();
 }
