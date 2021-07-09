@@ -12,4 +12,8 @@ public interface TicketRegistrationService {
     List<TicketRegistration> findAll();
 
     TicketRegistration findByReferenceNumber(String referenceNumber);
+
+    boolean checkForPayment(String referenceNumber);
+
+    ResponseEntity<String> generateReferenceNumber();
 }

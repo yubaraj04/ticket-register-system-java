@@ -1,10 +1,13 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
+import com.uv.ticketregistersystem.Payment.Payment;
 import com.uv.ticketregistersystem.model.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.OneToOne;
 import java.util.Date;
 
 @Entity
@@ -26,5 +29,9 @@ public class TicketRegistration extends BaseEntity {
     private int numberOfPassenger;
     private double totalAmount;
     private String referenceNumber;
+    private boolean paymentMade=false;
+
+    @OneToOne(mappedBy="ticketRegistration", cascade= CascadeType.ALL)
+    private Payment payment;
     
 }
