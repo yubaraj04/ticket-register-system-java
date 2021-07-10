@@ -1,13 +1,13 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
 import com.uv.ticketregistersystem.constants.Constants;
+import com.uv.ticketregistersystem.dtos.BarChart;
 import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -47,5 +47,12 @@ public class TicketRegistrationController {
         /*for dashboard*/
         return service.getTotalSeatData();
     }
+
+    @GetMapping("getReceivedVsPending")
+    public List<BarChart> getReceivedVsPending(){
+        /*for dashboard*/
+        return service.getReceivedVsPending();
+    }
+
 
 }

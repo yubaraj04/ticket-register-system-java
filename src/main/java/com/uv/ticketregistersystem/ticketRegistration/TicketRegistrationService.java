@@ -1,5 +1,6 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
+import com.uv.ticketregistersystem.dtos.BarChart;
 import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.http.ResponseEntity;
 
@@ -20,4 +21,6 @@ public interface TicketRegistrationService {
     Object generateReferenceNumber();
 
     List<LineChart> getTotalSeatData();
+
+    List<BarChart> getReceivedVsPending();
 }

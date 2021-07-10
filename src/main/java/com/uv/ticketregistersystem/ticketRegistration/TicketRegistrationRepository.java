@@ -14,4 +14,7 @@ public interface TicketRegistrationRepository extends JpaRepository<TicketRegist
 
     @Query("select sum(numberOfPassenger) from TicketRegistration t where t.createdAt=:date")
     int getDailyTotalSeat(LocalDate date);
+
+    @Query("select sum(totalAmount) from TicketRegistration t where t.paymentMade=:status")
+    double getSumByStatus(boolean status);
 }

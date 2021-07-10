@@ -1,5 +1,6 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
+import com.uv.ticketregistersystem.dtos.BarChart;
 import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -85,6 +86,25 @@ public class TicketRegistrationServiceImpl implements TicketRegistrationService{
         }
         return list;
     }
+
+    @Override
+    public List<BarChart> getReceivedVsPending() {
+        List<BarChart> list = new ArrayList<>();
+        BarChart barChart= new BarChart();
+        barChart.setLabel("Pending");
+        barChart.setAmount(getAmountByPaymentStatus(false));
+        list.add(barChart);
+        BarChart barChart1 = new BarChart();
+        barChart1.setLabel("Paid");
+        barChart1.setAmount(getAmountByPaymentStatus(true));
+        list.add(barChart1);
+        return list;
+    }
+
+    public double getAmountByPaymentStatus(boolean status){
+       return this.repository.getSumByStatus(status);
+    }
+
     public int getDailyTotalSeatNumber(LocalDate date){
         Integer data=0;
         try{
