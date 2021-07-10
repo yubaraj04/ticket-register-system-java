@@ -1,9 +1,12 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
+import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -60,5 +63,34 @@ public class TicketRegistrationServiceImpl implements TicketRegistrationService{
         }
         map.put("referenceNumber",referenceNumber);
         return map;
+    }
+
+    @Override
+    public List<LineChart> getTotalSeatData() {
+        List<LineChart> list = new ArrayList<>();
+        List<LocalDate> dates = new ArrayList<>();
+        dates.add(LocalDate.now());
+        dates.add(LocalDate.now().minusDays(1));
+        dates.add(LocalDate.now().minusDays(2));
+        dates.add(LocalDate.now().minusDays(3));
+        dates.add(LocalDate.now().minusDays(4));
+        dates.add(LocalDate.now().minusDays(5));
+        dates.add(LocalDate.now().minusDays(6));
+
+        for(LocalDate date: dates){
+            LineChart lc = new LineChart();
+            lc.setDate(String.valueOf(date));
+            lc.setValue(getDailyTotalSeatNumber(date));
+            list.add(lc);
+        }
+        return list;
+    }
+    public int getDailyTotalSeatNumber(LocalDate date){
+        Integer data=0;
+        try{
+           return  data =repository.getDailyTotalSeat(date);
+        }catch (Exception e){
+            return data;
+        }
     }
 }

@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.Constants;
+package com.uv.ticketregistersystem.constants;
 
 public class Constants {
     public static final String BASE_URL="/trs/";

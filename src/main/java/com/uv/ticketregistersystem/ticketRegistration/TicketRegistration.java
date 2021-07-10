@@ -1,6 +1,6 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
-import com.uv.ticketregistersystem.Payment.Payment;
+import com.uv.ticketregistersystem.payment.Payment;
 import com.uv.ticketregistersystem.model.BaseEntity;
 import lombok.Getter;
 import lombok.Setter;

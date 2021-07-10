@@ -1,11 +1,13 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
-import com.uv.ticketregistersystem.Constants.Constants;
+import com.uv.ticketregistersystem.constants.Constants;
+import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @CrossOrigin(origins = "*")
 @RestController
@@ -35,9 +37,15 @@ public class TicketRegistrationController {
         return service.findByReferenceNumber(referenceNumber);
     }
 
-    @GetMapping("/generateReferenceNumber")
+    @GetMapping("generateReferenceNumber")
     public Object generateReferenceNumber(){
         return service.generateReferenceNumber();
+    }
+
+    @GetMapping("getTotalRegistrationData")
+    public List<LineChart> getTotalSeatData(){
+        /*for dashboard*/
+        return service.getTotalSeatData();
     }
 
 }

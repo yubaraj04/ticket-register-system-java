@@ -1,5 +1,5 @@
 
-package com.uv.ticketregistersystem.PostConstruct;
+package com.uv.ticketregistersystem.postConstruct;
 
 import com.uv.ticketregistersystem.model.User;
 import com.uv.ticketregistersystem.repository.UserRepository;

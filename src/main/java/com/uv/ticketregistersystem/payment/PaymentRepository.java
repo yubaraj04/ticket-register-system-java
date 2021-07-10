@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.Payment;
+package com.uv.ticketregistersystem.payment;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

@@ -1,8 +1,10 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
+import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
+import java.util.Map;
 
 public interface TicketRegistrationService {
     ResponseEntity<String> save(TicketRegistration registration);
@@ -16,4 +18,6 @@ public interface TicketRegistrationService {
     boolean checkForPayment(String referenceNumber);
 
     Object generateReferenceNumber();
+
+    List<LineChart> getTotalSeatData();
 }

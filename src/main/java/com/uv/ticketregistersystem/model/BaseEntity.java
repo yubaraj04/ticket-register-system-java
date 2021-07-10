@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.time.LocalDate;
 import java.util.Date;
 
 @Getter
@@ -16,6 +17,6 @@ public class BaseEntity {
 	private Long id;
 
     @Column(name = "created_at")
-    private Date createdAt = new Date();
+    private LocalDate createdAt = LocalDate.now();
 
 }

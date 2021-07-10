@@ -1,6 +1,6 @@
-package com.uv.ticketregistersystem.Payment;
+package com.uv.ticketregistersystem.payment;
 
-import com.uv.ticketregistersystem.Constants.Constants;
+import com.uv.ticketregistersystem.constants.Constants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

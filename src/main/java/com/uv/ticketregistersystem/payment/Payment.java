@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.Payment;
+package com.uv.ticketregistersystem.payment;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.uv.ticketregistersystem.model.BaseEntity;
