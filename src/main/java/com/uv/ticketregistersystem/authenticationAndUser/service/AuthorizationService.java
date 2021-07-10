@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.service;
+package com.uv.ticketregistersystem.authenticationAndUser.service;
 
 public interface AuthorizationService {
 	public Object getValues();

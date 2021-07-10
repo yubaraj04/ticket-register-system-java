@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.model;
+package com.uv.ticketregistersystem.authenticationAndUser.model;
 
 import lombok.Getter;
 import lombok.Setter;

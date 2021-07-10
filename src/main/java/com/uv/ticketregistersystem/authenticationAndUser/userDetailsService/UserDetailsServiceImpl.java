@@ -1,7 +1,7 @@
-package com.uv.ticketregistersystem.userDetailsService;
+package com.uv.ticketregistersystem.authenticationAndUser.userDetailsService;
 
-import com.uv.ticketregistersystem.model.User;
-import com.uv.ticketregistersystem.repository.UserRepository;
+import com.uv.ticketregistersystem.authenticationAndUser.model.User;
+import com.uv.ticketregistersystem.authenticationAndUser.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

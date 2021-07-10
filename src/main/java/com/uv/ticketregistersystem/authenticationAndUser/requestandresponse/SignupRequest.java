@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.requestandresponse;
+package com.uv.ticketregistersystem.authenticationAndUser.requestandresponse;
 import java.util.Set;
 
 import javax.validation.constraints.Email;

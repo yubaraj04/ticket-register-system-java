@@ -1,7 +1,7 @@
-package com.uv.ticketregistersystem.service;
+package com.uv.ticketregistersystem.authenticationAndUser.service;
 
-import com.uv.ticketregistersystem.model.User;
-import com.uv.ticketregistersystem.requestandresponse.SignupRequest;
+import com.uv.ticketregistersystem.authenticationAndUser.model.User;
+import com.uv.ticketregistersystem.authenticationAndUser.requestandresponse.SignupRequest;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;

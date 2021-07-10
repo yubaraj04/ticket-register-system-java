@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.securityConfigAndutils;
+package com.uv.ticketregistersystem.authenticationAndUser.securityConfigAndutils;
 
 import java.io.IOException;
 

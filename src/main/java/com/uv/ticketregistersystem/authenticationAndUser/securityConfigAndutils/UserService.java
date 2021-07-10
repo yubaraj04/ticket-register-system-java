@@ -1,6 +1,6 @@
-package com.uv.ticketregistersystem.securityConfigAndutils;
+package com.uv.ticketregistersystem.authenticationAndUser.securityConfigAndutils;
 
-import com.uv.ticketregistersystem.userDetailsService.UserDetailsImpl;
+import com.uv.ticketregistersystem.authenticationAndUser.userDetailsService.UserDetailsImpl;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;

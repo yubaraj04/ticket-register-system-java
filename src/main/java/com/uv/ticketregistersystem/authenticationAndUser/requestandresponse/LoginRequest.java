@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.requestandresponse;
+package com.uv.ticketregistersystem.authenticationAndUser.requestandresponse;
 
 import javax.validation.constraints.NotBlank;
 

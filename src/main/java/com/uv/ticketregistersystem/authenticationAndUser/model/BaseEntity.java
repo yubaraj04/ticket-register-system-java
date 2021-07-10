@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.model;
+package com.uv.ticketregistersystem.authenticationAndUser.model;
 
 
 import lombok.Getter;
@@ -6,7 +6,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.Date;
 
 @Getter
 @Setter

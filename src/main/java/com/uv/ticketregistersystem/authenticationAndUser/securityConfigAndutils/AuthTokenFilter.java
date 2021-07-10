@@ -1,6 +1,6 @@
-package com.uv.ticketregistersystem.securityConfigAndutils;
+package com.uv.ticketregistersystem.authenticationAndUser.securityConfigAndutils;
 
-import com.uv.ticketregistersystem.userDetailsService.UserDetailsServiceImpl;
+import com.uv.ticketregistersystem.authenticationAndUser.userDetailsService.UserDetailsServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

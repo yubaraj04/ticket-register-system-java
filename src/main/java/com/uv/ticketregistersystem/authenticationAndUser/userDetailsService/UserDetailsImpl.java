@@ -1,7 +1,7 @@
-package com.uv.ticketregistersystem.userDetailsService;
+package com.uv.ticketregistersystem.authenticationAndUser.userDetailsService;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.uv.ticketregistersystem.model.User;
+import com.uv.ticketregistersystem.authenticationAndUser.model.User;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 

@@ -1,22 +1,17 @@
-package com.uv.ticketregistersystem.requestandresponse;
+package com.uv.ticketregistersystem.authenticationAndUser.requestandresponse;
 
-import com.uv.ticketregistersystem.model.User;
-import com.uv.ticketregistersystem.repository.UserRepository;
-import com.uv.ticketregistersystem.securityConfigAndutils.JwtUtils;
-import com.uv.ticketregistersystem.userDetailsService.UserDetailsImpl;
+import com.uv.ticketregistersystem.authenticationAndUser.securityConfigAndutils.JwtUtils;
+import com.uv.ticketregistersystem.authenticationAndUser.userDetailsService.UserDetailsImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.List;
-import java.util.Optional;
 import java.util.stream.Collectors;
 
 @CrossOrigin(origins = "*", maxAge = 3600)

@@ -1,6 +1,6 @@
-package com.uv.ticketregistersystem.securityConfigAndutils;
+package com.uv.ticketregistersystem.authenticationAndUser.securityConfigAndutils;
 
-import com.uv.ticketregistersystem.userDetailsService.UserDetailsImpl;
+import com.uv.ticketregistersystem.authenticationAndUser.userDetailsService.UserDetailsImpl;
 import io.jsonwebtoken.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

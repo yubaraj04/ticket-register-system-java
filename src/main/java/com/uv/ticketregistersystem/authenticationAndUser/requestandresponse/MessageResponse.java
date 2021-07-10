@@ -1,4 +1,4 @@
-package com.uv.ticketregistersystem.requestandresponse;
+package com.uv.ticketregistersystem.authenticationAndUser.requestandresponse;
 
 public class MessageResponse {
 	private String message;

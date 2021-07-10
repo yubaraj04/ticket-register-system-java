@@ -1,6 +1,6 @@
-package com.uv.ticketregistersystem.repository;
+package com.uv.ticketregistersystem.authenticationAndUser.repository;
 
-import com.uv.ticketregistersystem.model.Authorization;
+import com.uv.ticketregistersystem.authenticationAndUser.model.Authorization;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,8 +1,8 @@
 
 package com.uv.ticketregistersystem.postConstruct;
 
-import com.uv.ticketregistersystem.model.User;
-import com.uv.ticketregistersystem.repository.UserRepository;
+import com.uv.ticketregistersystem.authenticationAndUser.model.User;
+import com.uv.ticketregistersystem.authenticationAndUser.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
