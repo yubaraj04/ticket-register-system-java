@@ -1,7 +1,7 @@
 package com.uv.ticketregistersystem.payment;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.uv.ticketregistersystem.authenticationAndUser.model.BaseEntity;
+import com.uv.ticketregistersystem.utility.BaseEntity;
 import com.uv.ticketregistersystem.ticketRegistration.TicketRegistration;
 import lombok.Getter;
 import lombok.Setter;

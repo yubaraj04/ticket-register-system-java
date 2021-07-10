@@ -1,6 +1,6 @@
 package com.uv.ticketregistersystem.ticketRegistration;
 
-import com.uv.ticketregistersystem.constants.Constants;
+import com.uv.ticketregistersystem.utility.Constants;
 import com.uv.ticketregistersystem.dtos.BarChart;
 import com.uv.ticketregistersystem.dtos.LineChart;
 import org.springframework.beans.factory.annotation.Autowired;
