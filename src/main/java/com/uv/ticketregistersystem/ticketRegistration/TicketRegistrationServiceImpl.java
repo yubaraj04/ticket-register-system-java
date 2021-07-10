@@ -79,7 +79,7 @@ public class TicketRegistrationServiceImpl implements TicketRegistrationService{
 
         for(LocalDate date: dates){
             LineChart lc = new LineChart();
-            lc.setDate(String.valueOf(date));
+            lc.setDate((date));
             lc.setValue(getDailyTotalSeatNumber(date));
             list.add(lc);
         }
